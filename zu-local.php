@@ -23,5 +23,5 @@ add_action('wp_footer', 'zu_local_add_promt');
 // Включает на все страницы функции
 add_action('wp_header', 'zu_local_include');
 
-// Добавим подменю в меню админ-панели "Инструменты" (tools):
+// Добавим подменю в меню админ-панели
 add_action('admin_menu', 'register_zu_local_page');

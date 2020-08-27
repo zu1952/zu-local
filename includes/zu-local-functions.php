@@ -35,7 +35,7 @@ function zu_local_include() {
     return '<?php recuire_once ' . $zu_local_functions_path . '?>';
 };
 
-// Включение подпункта "ZU Local" к меню "Инструменты" и
+// Включение подпункта "Debug MSG" к меню "Инструменты" (tools) и
 // регистрация функции отображения страницы плагина.
 function register_zu_local_page() {
     add_submenu_page( 'tools.php', 
