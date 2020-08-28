@@ -17,10 +17,7 @@ function zu_local_activation() {
     zu_local_add_promt();
 };
 
-// Выводит после рендеринга страницы сообщение
-add_action('wp_footer', 'zu_local_add_promt');
-
-// Включает на все страницы функции
+// Подключает функции плагина
 add_action('wp_header', 'zu_local_include');
 
 // Добавим подменю в меню админ-панели

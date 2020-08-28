@@ -9,8 +9,7 @@
  *    выводится текст о том, что сервер запущен локально;
  *    окно сообщения автоматически закрывается через 5 сек.
  * **************************************************************/
-
- function zu_local_add_promt($param = '/time:5', $txt = 'Server started locally') {
+function zu_local_add_promt($param = '/time:5', $txt = 'Server started locally') {
     if ($_SERVER['SERVER_ADDR'] == $_SERVER['REMOTE_ADDR']) {
         $cmd = 'msg console';
         execInBackground($cmd, $param, __($txt));
@@ -52,6 +51,8 @@ function zu_local_page_callback() {
 	// контент страницы
 	echo '<div class="wrap">';
     echo '<h2>'. get_admin_page_title() .'</h2>';
-    echo '<p>Страница управления локальной отладкой.</p>';
+    echo '<p>Для получения значения переменной в определенном месте кода:</p>';
+    echo '<p>вставляем в этом месте функцию "zu_local_add_promt()" с аргументами:</p>';
+    echo '<p>"/w", перменная</p>';
 	echo '</div>';
 };
