@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: ZU Local
-Description: Плагин для отладки на локальном сервере
-Version: 1.0
-Author: Erkin Zadauly
-*/
+ * Plugin Name: ZU Local
+ * Description: Плагин для отладки на локальном сервере
+ * Version: 1.0
+ * Author: Erkin Zadauly
+ *******************************************************/
 
 // Подключаем zu-local-functions.php
 require_once plugin_dir_path(__FILE__) . 'includes/zu-local-functions.php';
